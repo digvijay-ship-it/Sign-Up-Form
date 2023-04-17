@@ -24,7 +24,7 @@ body {
     background:
         url("../images/6207099_24782.jpg") no-repeat;
     background-size: cover;
-    background-position: center center ;
+    background-position: center center;
     display: flex;
     flex-direction: column;
     color: aliceblue;
@@ -69,24 +69,29 @@ body {
     color: inherit;
 }
 
-#containLogin{
-    background-color: rgb(249,250,251);
+#containLogin {
+    background-color: rgb(249, 250, 251);
     display: flex;
     flex-direction: column;
     height: inherit;
+    --login-container-right-margin: 10vw;
+    --login-container-left-margin: 5vw;
 }
 
-#inviteMess{
+#inviteMess {
     display: flex;
     flex-direction: column;
     /* height: calc(inherit - 70vh); */
     height: fit-content;
     /* margin-top: 10vh; */
-    /* margin-bottom: 5vh; */
+    margin-right: var(--login-container-right-margin);
+    margin-left: var(--login-container-left-margin);
 }
-#inviteMess p:first-child{
+
+#inviteMess p:first-child {
     margin: 10vh 0px 5vh;
 }
-#inviteMess p:nth-child(2){
-    margin-bottom: 3vh ;
+
+#inviteMess p:nth-child(2) {
+    margin-bottom: 3vh;
 }
