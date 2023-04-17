@@ -1,6 +1,10 @@
 * {
     margin: 0px;
-    width: 0px;
+}
+
+@font-face {
+    font-family: norse-Font;
+    src: url(../font/Norse-Bold.otf);
 }
 
 body {
@@ -16,12 +20,50 @@ body {
 
 #containLeft {
     /* --container-left-width : calc(var(--container-left-width)) */
-    /* flex:1; */
-    width: clamp(350px,35vw,35vw);
+    width: clamp(400px, 400px, 400px);
     background:
         url("../images/photo-1585202900225-6d3ac20a6962.avif") no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
     color: aliceblue;
+    height: inherit;
+}
+
+#logo {
+    width: inherit;
+    background-color: rgb(248, 215, 71, .6);
+
+    height: clamp(80px, 80px, 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0px auto;
+    gap: 20px;
+}
+
+#logoImg {
+    max-width: 60px;
+    min-width: 60px;
+    max-height: 60px;
+    max-height: 60px;
+    /* height: clamp(60px,60px,60px); */
+    /* width: clamp(60px,60px,60px); */
+    margin: auto 0px;
+}
+
+#logoName {
+    font-family: norse-Font, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 4rem;
+}
+
+#credit {
+    width: inherit;
+    text-align: center;
+    font-size: .6rem;
+    margin-bottom: 2vh;
+}
+
+#credit a {
+    color: inherit;
 }
