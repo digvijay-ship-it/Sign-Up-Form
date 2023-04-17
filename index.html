@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./script/script.js" defer></script>
     <title>Project:Sign-Up Form</title>
 </head>
 
@@ -32,7 +33,48 @@
                     We know! you want to.
                 </p>
             </div>
-            <div id="loginForm"></div>
+            <div id="loginForm">
+                <form action="" method="post">
+                    <fieldset>
+                        <legend>Lets Party!!!!</legend>
+                        <div class="formSection">
+                            <div>
+                                <label for="First_Name">First Name</label>
+                                <input type="text" id="First_Name" name="First_Name" required>
+                            </div>
+                            <div>
+                                <label for="Last_Name">Last Name</label>
+                                <input type="text" id="Last_Name" name="Last_Name">
+                            </div>
+                        </div>
+                        <div class="formSection">
+                            <div>
+                                <label for="Email">Email</label>
+                                <input type="email" id="Email" name="Email"required>
+                            </div>
+                            <div>
+                                <label for="phone_number">Phone Number</label>
+                                <input type="number" id="phone_number" name="phone_number" required>
+                            </div>
+                        </div>
+                        <div class="formSection">
+                            <div>
+                                <label for="Password">Password</label>
+                                <input type="password" id="Password" name="Password">
+                            </div>
+                            <div>
+                                <label for="confirm_Password">Confirm Password</label>
+                                <input type="password" id="confirm_Password" name="confirm_Password">
+                            </div>
+                        </div>    
+                    </fieldset>
+
+                    <div id="loginButtonSection">
+                        <button type="submit">Create account</button>
+                        <p>Already have an invitation! <a href="">Login</a></p>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </body>

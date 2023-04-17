@@ -44,12 +44,12 @@ body {
 }
 
 #logoImg {
-    max-width: 60px;
+    /* max-width: 60px;
     min-width: 60px;
     max-height: 60px;
-    max-height: 60px;
-    /* height: clamp(60px,60px,60px); */
-    /* width: clamp(60px,60px,60px); */
+    max-height: 60px; */
+    height: clamp(60px, 60px, 60px);
+    width: clamp(60px, 60px, 60px);
     margin: auto 0px;
 }
 
@@ -94,4 +94,55 @@ body {
 
 #inviteMess p:nth-child(2) {
     margin-bottom: 3vh;
+}
+
+.formSection {
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 90px;
+    margin: 5vh;
+}
+
+#loginForm {
+    background-color: rgb(255, 254, 254);
+    font-family: norse-Font, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+label {
+    display: block;
+}
+
+input {
+    display: block;
+    margin-top: 5px;
+    border-radius: 4px;
+}
+
+#loginButtonSection {
+    padding: 30px;
+}
+
+#loginButtonSection>button {
+    padding: 15px 50px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    background-color: rgb(248, 215, 71);
+    font-size: medium;
+}
+
+#loginButtonSection a {
+    color: rgb(248, 215, 71);
+    text-decoration: none;
+}
+
+.formSection input:invalid {
+    border: solid 5px rgb(206, 97, 97);
+}
+
+.formSection input:valid {
+    border: solid 5px rgb(248, 215, 71);
+}
+
+.formSection input:focus {
+    border: solid 5px rgb(51, 95, 219);
 }
